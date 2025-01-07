@@ -32,4 +32,8 @@ spec:
         name: radius
         namespace: radius-system
       interval: 12h
+  values:
+    controller:
+      image: ghcr.io/willdavsmith/flux-demo/controller
+      tag: latest
 ---
