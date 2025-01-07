@@ -14,7 +14,7 @@ metadata:
 spec:
   type: "oci"
   interval: 5m0s
-  url: oci://ghcr.io/willdavsmith/flux-demo/helm-chart
+  url: oci://ghcr.io/willdavsmith/radius/helm-chart
 ---
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
@@ -26,14 +26,10 @@ spec:
   chart:
     spec:
       chart: radius
-      version: "1.0.0"
+      version: 0.42.42-dev
       sourceRef:
         kind: HelmRepository
         name: radius
         namespace: radius-system
       interval: 12h
-  values:
-    controller:
-      image: ghcr.io/willdavsmith/flux-demo/controller
-      tag: latest
 ---
