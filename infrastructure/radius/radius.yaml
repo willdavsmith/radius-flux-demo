@@ -34,6 +34,6 @@ spec:
       interval: 12h
   values:
     controller:
-      image: ghcr.io/willdavsmith/flux-demo/controller
+      image: ghcr.io/willdavsmith/radius/controller
       tag: latest
 ---
