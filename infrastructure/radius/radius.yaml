@@ -34,7 +34,6 @@ spec:
       interval: 12h
   values:
     controller:
-      image:
-        repository: ghcr.io/willdavsmith/radius/controller
-        tag: latest
+      image: ghcr.io/willdavsmith/radius/controller
+      tag: latest
 ---
