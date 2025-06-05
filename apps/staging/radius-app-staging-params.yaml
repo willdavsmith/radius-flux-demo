@@ -1,8 +1,0 @@
-kind: DeploymentTemplate
-apiVersion: radapp.io/v1alpha3
-metadata:
-  name: radius-app.bicep
-  namespace: radius-system
-spec:
-  parameters:
-    replicas: '3'
