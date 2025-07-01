@@ -26,14 +26,14 @@ spec:
   chart:
     spec:
       chart: radius
-      version: 0.50.0
+      version: 0.48.0
       sourceRef:
         kind: HelmRepository
         name: radius
         namespace: radius-system
       interval: 12h
   values:
-    controller:
-      image: ghcr.io/willdavsmith/radius/controller
+    preupgrade:
+      image: ghcr.io/willdavsmith/radius/pre-upgrade
       tag: latest
 ---
